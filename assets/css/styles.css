@@ -73,6 +73,10 @@
     font-size: 30px;
 }
 
+.intro-p {
+    font-size: 20px;
+}
+
 .biopic {
     width: 150px;
     position: relative;
@@ -82,6 +86,7 @@
 
 #work {
     display:flex;
+    flex: 0 1 200px;
     justify-content: flex-end;
     align-items: flex-end;
     position: relative;
@@ -104,8 +109,8 @@
     position: relative;
     left: 1250px;
     bottom: 200px;
-    max-width: 900px;
-    max-height: 400px;
+    width: 900px;
+    height: 400px;
     border: 10px lightblue solid;
     padding: 250px 400px;
     background-image: url("https://www.techrepublic.com/a/hub/i/r/2021/02/17/3c192f18-47eb-428a-b64f-ba57fcd3c36a/resize/1200x/03e226ca44cdd6509c01aaaa6ffa0095/programming-coding.jpg" );
@@ -171,4 +176,36 @@
     background-image: url(https://edsurge.imgix.net/uploads/post/image/12176/coding-1556754232.jpg?auto=compress%2Cformat&w=1024&h=512&fit=crop);
     background-size: cover;
     background-position: center;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+    :root {
+        --size-divisor: 1;
+    }
+    #work {
+        width: 75%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    :root {
+        --size-divisor: 1.5;
+    }
+    #work {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    :root {
+        --size-divisor: 2;
+    }
+    #work {
+        width: 25%;
+    }
 }

@@ -86,7 +86,6 @@
 
 #work {
     display:flex;
-    flex: 0 1 200px;
     justify-content: flex-end;
     align-items: flex-end;
     position: relative;
@@ -107,12 +106,10 @@
 
 .projectpic {
     position: relative;
-    left: 1250px;
+    left: 700px;
     bottom: 200px;
-    width: 900px;
-    height: 400px;
     border: 10px lightblue solid;
-    padding: 250px 400px;
+    padding: 125% 200%;
     background-image: url("https://www.techrepublic.com/a/hub/i/r/2021/02/17/3c192f18-47eb-428a-b64f-ba57fcd3c36a/resize/1200x/03e226ca44cdd6509c01aaaa6ffa0095/programming-coding.jpg" );
     background-size: cover;
     background-position: center;
@@ -124,7 +121,7 @@
 
 .projecttext {
     position: relative;
-    left: 1250px;
+    left: 700px;
     top: 10px;
     padding: 5px;
     width: 200px;
@@ -132,7 +129,6 @@
     color: black;
     background-color: lightblue;
     text-align: center;
-
 }
 
 .button {
@@ -142,7 +138,7 @@
     left: 200px;
     top: 300px;
     border: 5px lightblue solid;
-    padding: 100px 150px;
+    padding: 10% 14%;
     text-decoration: none;
     margin: 0px 20px;
     cursor: pointer;
@@ -178,16 +174,55 @@
     background-position: center;
 }
 
+#contactme {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    background-color: dodgerblue;
+    padding: 10px 100px;
+    width: 79%;
+}
 
+.contact {
+    position: relative;
+    right: 10px;
+    font-size: 30px;
+}
 
+.contactlist {
+    display: inline-flex;
+    justify-content: space-around;
+    list-style-type: none;
+    position: relative;
+    left: 200px;
+}
+
+.email {
+    width: 10%;
+}
+
+.phone {
+    width: 10%;
+}
+
+.github {
+    width: 12%;
+}
+
+.linkedin {
+    width: 10%;
+}
+
+.footer {
+    font-size: 2rem;
+    text-align: center;
+}
 
 @media screen and (max-width: 992px) {
     :root {
         --size-divisor: 1;
-    }
-    #work {
-        width: 75%;
-    }
+    } 
 }
 
 
@@ -195,17 +230,11 @@
     :root {
         --size-divisor: 1.5;
     }
-    #work {
-        width: 50%;
-    }
 }
 
 
 @media screen and (max-width: 576px) {
     :root {
         --size-divisor: 2;
-    }
-    #work {
-        width: 25%;
     }
 }
